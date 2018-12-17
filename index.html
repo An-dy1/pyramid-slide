@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>pyramid-slide</title>
+    <script src="pyramid-slide.js"></script>
+    <style type="text/css">
+      #pyramid {
+        line-height: 0;
+        font-size: 30px;
+      }
+      body {
+        font-family: "Courier New", monospace;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>It's a pyramid slide:</h1>
+    <p>How high can you go?</p>
+    <p id="height-display"></p>
+    <input
+      type="range"
+      id="height-slider"
+      min="1"
+      max="20"
+      oninput="drawPyramid(this.value)"
+    />
+
+    <div id="pyramid"></div>
+  </body>
+</html>
