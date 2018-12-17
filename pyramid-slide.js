@@ -1,5 +1,6 @@
 function drawPyramid(height) {
   document.getElementById("pyramid").innerHTML = "";
+  document.getElementById("symbol").innerHTML = "";
 
   for (var row = 0; row < height; row++) {
     var numBricks = row + 2;
@@ -7,7 +8,7 @@ function drawPyramid(height) {
 
     var rowStr = "";
     for (var i = 0; i < numSpaces; i++) {
-      var spaceChar = "&nbsp"; // this is the HTML encoding for a space " "
+      var spaceChar = "&nbsp";
       rowStr += spaceChar;
     }
     for (var i = 0; i < numBricks; i++) {
