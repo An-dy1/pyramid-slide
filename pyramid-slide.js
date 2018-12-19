@@ -1,8 +1,7 @@
-selector = document.getElementById("brickType");
+selector = document.getElementById("symbol");
 
 selector.onchange = function() {
-  console.log("someone changed the brickType");
-  value = document.getElementById("brickType").value;
+  value = document.getElementById("symbol").value;
   height = document.getElementById("height").value;
   drawPyramid(height, value);
 };
@@ -10,8 +9,7 @@ selector.onchange = function() {
 slider = document.getElementById("height");
 
 slider.oninput = function() {
-  console.log("Slider changed");
-  value = document.getElementById("brickType").value;
+  value = document.getElementById("symbol").value;
   height = document.getElementById("height").value;
   document.getElementById("height-label").textContent = height;
   drawPyramid(height, value);
